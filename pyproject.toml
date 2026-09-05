@@ -1,0 +1,24 @@
+[project]
+name = "capstone-crewai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anast", email = "anastacia.marinho@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "crewai[openai]>=0.165.1",
+    "crewai-tools[mcp]>=0.62.3",
+    "fastmcp>=2.11.3",
+    "streamlit>=1.48.1",
+    "tavily-python>=0.7.11",
+    "google-search-results>=2.4.2",
+]
+
+[project.scripts]
+capstone-crewai = "capstone_crewai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
